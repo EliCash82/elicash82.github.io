@@ -6,4 +6,4 @@ Previous version now located at `elicash82_github_com-ARCHIVE`
 
 Revised version of [https://github.com/rynstwrt/Sindivisible](https://github.com/rynstwrt/Sindivisible)
 
-Attempting to make a simple change.
+
