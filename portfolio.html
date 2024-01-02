@@ -4,15 +4,19 @@ OA<!DOCTYPE html>
     <meta charset="UTF-8">
     <title>Anderson Evans - Portfolio</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         .portfolio-item {
             border: 1px solid #ddd;
             padding: 10px;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
         }
         .portfolio-image {
-            width: 100px;
+            max-width: 100%; /* Ensures image is not larger than its container */
             height: auto;
-            float: left;
             margin-right: 10px;
         }
         .portfolio-title {
@@ -23,8 +27,20 @@ OA<!DOCTYPE html>
             text-decoration: none;
         }
         .portfolio-summary {
-            clear: both;
-            margin-top: 10px;
+            flex: 1; /* Allows this element to fill the space */
+        }
+
+        /* Responsive Image Sizes */
+        @media (min-width: 600px) {
+            .portfolio-image {
+                width: 150px; /* Larger thumbnails on wider screens */
+            }
+        }
+
+        @media (min-width: 900px) {
+            .portfolio-image {
+                width: 200px; /* Even larger thumbnails on the widest screens */
+            }
         }
     </style>
 </head>
